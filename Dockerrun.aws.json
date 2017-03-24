@@ -1,0 +1,42 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "volumes": [
+    {
+      "name": "api",
+      "host": {
+        "sourcePath": "/var/app/current"
+      }
+    }
+  ],
+  "containerDefinitions": [
+    {
+      "name": "api-app",
+      "essential": true,
+      "memory": 256,
+      "command": [
+        "/bin/bash",
+        "/var/www/api/runners/prod/aws.sh"
+      ],
+      "links": [],
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 80
+        }
+      ],      
+      "mountPoints": [
+        {
+          "sourceVolume": "api",
+          "containerPath": "/var/www/api"
+        }
+      ]
+    }
+
+  ],
+  "environment": [
+    {
+        "name": "key",
+        "value": "value"
+    }
+  ]
+}

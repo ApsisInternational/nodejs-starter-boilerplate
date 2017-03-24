@@ -1,0 +1,26 @@
+{
+  "name": "formbuilder-publish-service",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "tcs server.ts"
+  },
+  "dependencies": {
+    "@types/es6-shim": "^0.31.32",
+    "@types/kcors": "^2.2.0",
+    "@types/koa": "^2.0.39",
+    "@types/koa-bodyparser": "^3.0.23",
+    "@types/koa-router": "^7.0.22",
+    "@types/node": "^7.0.8",
+    "fetch": "^1.1.0",
+    "kcors": "^2.1.1",
+    "koa": "^2.0.0",
+    "koa-bodyparser": "^3.1.0",
+    "koa-router": "^7.0.1",
+    "lodash": "^4.13.1",
+    "ts-node": "^3.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^2.2.1"
+  }
+}

@@ -1,0 +1,10 @@
+version: '2'
+services:
+  api:
+    expose:
+      - 80
+    ports:
+      - 80:80
+    working_dir: /var/www/api
+    command: pm2-docker start init.js
+    restart: always
