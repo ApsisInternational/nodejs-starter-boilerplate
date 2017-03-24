@@ -1,4 +1,4 @@
-import {ExampleController} from './../controllers/example.controller')
+import {ExampleController} from './../controllers/example.controller'
 
 export function setupRoute(router) {
 
